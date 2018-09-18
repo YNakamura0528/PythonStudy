@@ -7,4 +7,5 @@ arr = np.random.randn(10000).reshape((5000,2))
 df = pd.DataFrame(arr, columns = ["a", "b"])
 
 sns.kdeplot(df["a"], df["b"])
+plt.scatter(df["a"], df["b"], marker = ".")
 plt.show()
